@@ -11,7 +11,7 @@
             <div class="form-group">
                 <asp:Label ID="lblName" runat="server" Text="Name" />
                 <asp:TextBox class="form-control" ID="txtName" runat="server" placeholder="Enter Your Name"/>
-                <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" 
+                <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName"  Display="Dynamic"
             ErrorMessage="Please, fill the Name!" CssClass="label-warning"/>
             </div>
 
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <asp:Label for="txtPassword" ID="lblPassword" runat="server" Text="Password" />
                 <asp:TextBox  class="form-control" ID="txtPassword" runat="server" TextMode="Password" placeholder="Choose Your Password"/>
-                <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" 
+                <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword"  Display="Dynamic"
             ErrorMessage="Please, fill the Password!" CssClass="label-warning"/>
             </div>
 

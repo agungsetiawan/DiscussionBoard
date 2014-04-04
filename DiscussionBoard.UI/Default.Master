@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Discussion Board</a>
+                <a class="navbar-brand" href="index.php"><i class="fa fa-check-square-o fa-lg"></i> Discussion Board</a>
 
             </div>
 
@@ -69,10 +69,10 @@
                     <li>
                         <a><i class="fa fa-tags fa-lg"></i><b> Tags</b></a>
                         <div id="tags">
-                            <asp:Repeater ID="repaterTag" runat="server" ItemType="DiscussionBoard.Model.Tag"
+                            <asp:Repeater ID="repaterTag" runat="server" ItemType="System.string"
                                 SelectMethod="repaterTag_GetData">
                                 <ItemTemplate>
-                                    <span class="label label-success"><a href="TaggedQuestion.aspx?ID=<%# Item.Label %>"><i class="fa fa-tag"></i> <%# Item.Label %></a></span>
+                                    <span class="label label-success"><a href="TaggedQuestion.aspx?ID=<%# Item %>"><i class="fa fa-tag"></i> <%# Item %></a></span>
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>

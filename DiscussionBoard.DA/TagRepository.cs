@@ -25,7 +25,9 @@ namespace DiscussionBoard.DA
 
         public List<Tag> FindAll()
         {
-            return context.Tags.ToList();
+            List<Tag> tags = context.Tags.ToList();
+            return tags;
         }
+
     }
 }

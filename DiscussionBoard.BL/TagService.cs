@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace DiscussionBoard.BL
 {
@@ -22,9 +23,10 @@ namespace DiscussionBoard.BL
             repository.Remove(tag);
         }
 
-        public List<Tag> FindAll()
+        public List<string> FindAll()
         {
-            return repository.FindAll();
+            TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
+            return repository.FindAll().Select(p => ti.ToTitleCase(p.Label)).Distinct().ToList();
         }
     }
 }

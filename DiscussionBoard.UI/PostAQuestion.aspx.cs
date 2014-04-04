@@ -65,7 +65,7 @@ namespace DiscussionBoard.UI
             foreach (var tag in list)
             {
                 result.Add(new Tag {
-                     Label = tag
+                     Label = tag.Trim()
                 });
             }
             return result;

@@ -9,7 +9,7 @@
 
     <div class="panel panel-success panel-top-question">
         <div class="panel-heading top-question-heading">
-            <h3 class="panel-title top-question-label">Top Question</h3>
+            <h3 class="panel-title top-question-label"><i class="fa fa-thumbs-o-up "></i>  Top Question This Week</h3>
         </div>
         <div class="panel-body">
             <asp:Repeater ID="repeaterQuestion" runat="server" ItemType="DiscussionBoard.Model.Question"
@@ -35,7 +35,7 @@
    
     <div class="panel panel-success panel-lastest-question">
         <div class="panel-heading lastest-question-heading">
-            <h3 class="panel-title top-question-label">Lastest Question</h3>
+            <h3 class="panel-title top-question-label"><i class="fa fa-calendar"></i> Lastest Question</h3>
         </div>
         <div class="panel-body">
             <asp:Repeater ID="repeaterLatestQuestion" runat="server" ItemType="DiscussionBoard.Model.Question"
