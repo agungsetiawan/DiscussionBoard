@@ -25,8 +25,7 @@ namespace DiscussionBoard.BL
 
         public List<string> FindAll()
         {
-            TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
-            return repository.FindAll().Select(p => ti.ToTitleCase(p.Label)).Distinct().ToList();
+            return repository.FindAll().Select(p => p.Label).Distinct().ToList();
         }
     }
 }

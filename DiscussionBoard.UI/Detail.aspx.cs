@@ -100,5 +100,36 @@ namespace DiscussionBoard.UI
             
 
         }
+
+        protected void upvote_Click(object sender, EventArgs e)
+        {
+            //Answer answer = new Answer();
+
+            Answer data = new Answer
+            {
+                AnswerId = 1,
+                Vote = 1
+            };
+
+            AnswerService service = new AnswerService();
+            service.Update(data);
+
+        }
+
+        protected void downvote_Click(object sender, EventArgs e)
+        {
+            //Answer answer = new Answer();
+
+            Answer data = new Answer
+            {
+                AnswerId = 1,
+                Vote = 1
+            };
+
+            AnswerService service = new AnswerService();
+            service.Update(data);
+
+        }
+
     }
 }

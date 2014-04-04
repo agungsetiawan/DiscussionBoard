@@ -2,6 +2,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script runat="server">
+        //void upvote_Click(object sender, EventArgs e)
+        //{
+            //invalidNotif.InnerHtml = "asdf";
+            //if ((UserEmail.Text == "reza@r.com") &&
+            //        (UserPass.Text == "asdf123"))
+            //{
+            //    FormsAuthentication.RedirectFromLoginPage
+            //        (UserEmail.Text, Persist.Checked);
+            //}
+            //else
+            //{
+            //    Msg.Text = "Invalid credentials. Please try again.";
+            //}
+        //}
+    </script>
     <div>
         <h3 id="invalidNotif" runat="server"></h3>
     </div>
@@ -23,32 +39,37 @@
             <asp:Repeater ID="repeater1" runat="server" ItemType="DiscussionBoard.Model.Tag"
                 SelectMethod="repeaterTag_GetData">
                 <ItemTemplate>
-                    <span class="label label-success" runat="server"><%# Item.Label %></span>
+                    <span class="label label-success" runat="server" ><a href="TaggedQuestion.aspx?ID=<%# Item.Label %>" style="color: white"><i class="fa fa-tag"></i> <%# Item.Label %></a></span>
                 </ItemTemplate>
             </asp:Repeater>
         </div>
     </div>
+    <a id="answerButton" runat="server" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Answer this question</a>
+    <a id="loginAnswer" href="Login.aspx" class="btn btn-default btn-md pull-right" runat="server" visible="false">Login to answer</a>
+
         <div id="commentSection">
             <asp:Repeater ID="repeaterAnswer" runat="server" ItemType="DiscussionBoard.Model.Answer"
                 SelectMethod="repeaterAnswer_GetData" >
                 <ItemTemplate >
                     <div class="row">
                         <div class="col-md-1">
-                            <a href="#" class="btn btn-default btn-white btn-sm">
+                            <button class="btn btn-default btn-white btn-sm"  runat="server">
                                 <span class="glyphicon glyphicon-chevron-up"></span>
-                            </a>
+                            </button>
+                            <%--<asp:Button ID="Button1" runat="server" Text="Button" OnClick="upvote_Click"/>--%>
                             <%--<br />--%>
                             <div style="text-align: center; font-weight: bold"><%# Item.Vote %></div>
                             <%--<br />--%>
-                            <a href="#" class="btn btn-default btn-white btn-sm">
+                            <button class="btn btn-default btn-white btn-sm" OnClick="downvote_Click">
                                 <span class="glyphicon glyphicon-chevron-down"></span>
-                            </a>
+                            </button>
                         </div>
                         <div class="col-md-11 a-answer" style="background-color: white; padding: 20px; border-radius: 3px; border-left: 1px solid whitesmoke">
                             <div>
                                 <%# Item.Content %>
                                 <hr />
                             </div>
+                            <a href="#">Flag as Spam</a>
                             <div class="pull-right">
                                 By: <%# Item.User.Name %>
                             </div>
@@ -58,12 +79,12 @@
                             </div>
                         </div>
                     </div>
+                    
                     <br />
                 </ItemTemplate>
             </asp:Repeater>
         </div>
-        <a id="answerButton" runat="server" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Answer this question</a>
-        <a id="loginAnswer" href="Login.aspx" class="btn btn-default btn-md pull-right" runat="server" visible="false">Login to answer</a>
+        
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">

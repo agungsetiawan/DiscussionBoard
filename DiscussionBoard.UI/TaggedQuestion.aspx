@@ -25,7 +25,7 @@
                             <p class="answer-label">Answer </p>
                         </div>
                         <div class="col-md-10 question-title">
-                            <a href="Detail.aspx?ID=<%# Item.Tags %>">
+                            <a href="Detail.aspx?ID=<%# Item.QuestionId %>">
                                 <p class="title-label">
                                     <%# Item.Title  %>
                                 </p>

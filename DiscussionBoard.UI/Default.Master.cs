@@ -1,4 +1,5 @@
 ﻿using DiscussionBoard.BL;
+using DiscussionBoard.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace DiscussionBoard.UI
 
         }
 
-        public IEnumerable<string> repaterTag_GetData()
+        public IEnumerable<String> repaterTag_GetData()
         {
             return service.FindAll();
         }

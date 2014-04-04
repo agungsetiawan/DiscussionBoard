@@ -76,15 +76,6 @@ namespace DiscussionBoard.UI {
         protected global::System.Web.UI.WebControls.Repeater repeater1;
         
         /// <summary>
-        /// repeaterAnswer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeaterAnswer;
-        
-        /// <summary>
         /// answerButton control.
         /// </summary>
         /// <remarks>
@@ -101,6 +92,15 @@ namespace DiscussionBoard.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor loginAnswer;
+        
+        /// <summary>
+        /// repeaterAnswer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater repeaterAnswer;
         
         /// <summary>
         /// ContentAnswer control.

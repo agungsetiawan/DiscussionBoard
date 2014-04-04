@@ -2,6 +2,7 @@
 using DiscussionBoard.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -62,10 +63,11 @@ namespace DiscussionBoard.UI
         {
             List<Tag> result = new List<Tag>();
             var list = tags.Split(',');
+            TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
             foreach (var tag in list)
             {
                 result.Add(new Tag {
-                     Label = tag.Trim()
+                     Label = ti.ToTitleCase(tag.Trim())
                 });
             }
             return result;

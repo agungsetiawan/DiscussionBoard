@@ -146,3 +146,28 @@ background-color: transparent;
 .btn-dasboard:hover {
     background-color:dodgerblue ;
 }
+.team-text {
+margin-top: -20px;
+}
+
+.team-wrap {
+background: none repeat scroll 0 0 #FFF;
+border: 1px solid #DDD;
+margin-bottom: 30px;
+}
+
+.photo-team {
+margin-bottom: 10px;
+}
+
+.team-wrap .inner {
+padding: 0 20px 20px;
+min-height: 183px;
+}
+
+.photo-team img {
+width: 100%;
+}
+img {
+vertical-align: middle;
+}

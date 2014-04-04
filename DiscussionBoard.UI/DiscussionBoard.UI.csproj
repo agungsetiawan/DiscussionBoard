@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="Confirm.aspx" />
     <Content Include="Content\bootstrap-custom.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -80,7 +81,12 @@
     <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Detail.aspx" />
+    <Content Include="Images\agung_s.jpg" />
+    <Content Include="Images\Ari_g.jpg" />
+    <Content Include="Images\maful.jpg" />
+    <Content Include="Images\owob.jpg" />
     <Content Include="Images\question-bg.png" />
+    <Content Include="Images\reza.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -106,6 +112,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Confirm.aspx.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
