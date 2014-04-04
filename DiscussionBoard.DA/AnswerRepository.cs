@@ -33,6 +33,11 @@ namespace DiscussionBoard.DA
             //return answer;
         }
 
+        public Answer FindSingleAnswerById(int id)
+        {
+            return context.Answers.SingleOrDefault(a => a.AnswerId == id);
+        }
+
         public List<Answer> FindAll()
         {
             return context.Answers.ToList();

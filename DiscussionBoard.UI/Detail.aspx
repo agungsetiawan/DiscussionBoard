@@ -53,16 +53,25 @@
                 <ItemTemplate >
                     <div class="row">
                         <div class="col-md-1">
-                            <button class="btn btn-default btn-white btn-sm"  runat="server">
+
+                          <%--  <button class="btn btn-default btn-white btn-sm"  runat="server">
                                 <span class="glyphicon glyphicon-chevron-up"></span>
-                            </button>
+                            </button>--%>
+
+                            <asp:Button ID="btnUpVote" CommandArgument="<%# Item.AnswerId %>" CssClass="btn btn-default btn-white btn-sm" runat="server" 
+                                Text="^" OnClick="upvote_Click"/>
+
                             <%--<asp:Button ID="Button1" runat="server" Text="Button" OnClick="upvote_Click"/>--%>
                             <%--<br />--%>
                             <div style="text-align: center; font-weight: bold"><%# Item.Vote %></div>
                             <%--<br />--%>
-                            <button class="btn btn-default btn-white btn-sm" OnClick="downvote_Click">
+
+                            <asp:Button ID="btnDownVote" CommandArgument="<%# Item.AnswerId %>" CssClass="btn btn-default btn-white btn-sm" runat="server" 
+                                Text="v" OnClick="downvote_Click"/>
+
+                            <%--<button class="btn btn-default btn-white btn-sm" OnClick="downvote_Click">
                                 <span class="glyphicon glyphicon-chevron-down"></span>
-                            </button>
+                            </button>--%>
                         </div>
                         <div class="col-md-11 a-answer" style="background-color: white; padding: 20px; border-radius: 3px; border-left: 1px solid whitesmoke">
                             <div>

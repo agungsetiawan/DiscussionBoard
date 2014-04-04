@@ -38,8 +38,18 @@ namespace DiscussionBoard.UI
                 invalidNotif.InnerHtml = "Invalid URL";
             }
 
-            
 
+            if (!IsPostBack)
+            {
+                foreach (RepeaterItem ritem in repeaterAnswer.Items)
+                {
+                    Button btn = ritem.FindControl("btnUpVote") as Button;
+                    btn.Click += new EventHandler(upvote_Click);
+
+                    Button btn1 = ritem.FindControl("btnDownVote") as Button;
+                    btn1.Click += new EventHandler(downvote_Click);
+                }
+            }
         }
 
         public IEnumerable<DiscussionBoard.Model.Answer> repeaterAnswer_GetData()
@@ -103,31 +113,27 @@ namespace DiscussionBoard.UI
 
         protected void upvote_Click(object sender, EventArgs e)
         {
-            //Answer answer = new Answer();
+            Button btn = (Button)sender;
+            var id = btn.CommandArgument.ToString();
 
-            Answer data = new Answer
-            {
-                AnswerId = 1,
-                Vote = 1
-            };
+            Answer data = answerService.FindySingleAnswerById(int.Parse(id));
+            data.Vote += 1;
+            answerService.Update(data);
 
-            AnswerService service = new AnswerService();
-            service.Update(data);
+            Response.Redirect(Request.RawUrl);
 
         }
 
         protected void downvote_Click(object sender, EventArgs e)
         {
-            //Answer answer = new Answer();
+            Button btn = (Button)sender;
+            var id = btn.CommandArgument.ToString();
 
-            Answer data = new Answer
-            {
-                AnswerId = 1,
-                Vote = 1
-            };
+            Answer data = answerService.FindySingleAnswerById(int.Parse(id));
+            data.Vote += 1;
+            answerService.Update(data);
 
-            AnswerService service = new AnswerService();
-            service.Update(data);
+            Response.Redirect(Request.RawUrl);
 
         }
 

@@ -27,6 +27,11 @@ namespace DiscussionBoard.BL
             return repository.FindById(id);
         }
 
+        public Answer FindySingleAnswerById(int id)
+        {
+            return repository.FindSingleAnswerById(id);
+        }
+
         public List<Answer> FindAll()
         {
             return repository.FindAll();
