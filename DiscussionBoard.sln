@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscussionBoard.UI", "DiscussionBoard.UI\DiscussionBoard.UI.csproj", "{C71E5A9B-1EC1-49C7-99EA-836B3F97D207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscussionBoard.DA", "DiscussionBoard.DA\DiscussionBoard.DA.csproj", "{A6C410DC-025F-4E15-BEF9-5B6D9E7AF86B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscussionBoard.BL", "DiscussionBoard.BL\DiscussionBoard.BL.csproj", "{0F813556-9568-4A0C-84D3-741ACABAD72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscussionBoard.Model", "DiscussionBoard.Model\DiscussionBoard.Model.csproj", "{3B2CFCE7-4E1E-48FC-AF6D-63CFC00F70A1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mitrais.com:8080/tfs/trainingcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DiscussionBoard.BL\\DiscussionBoard.BL.csproj
+		SccProjectName1 = DiscussionBoard.BL
+		SccLocalPath1 = DiscussionBoard.BL
+		SccProjectUniqueName2 = DiscussionBoard.DA\\DiscussionBoard.DA.csproj
+		SccProjectName2 = DiscussionBoard.DA
+		SccLocalPath2 = DiscussionBoard.DA
+		SccProjectUniqueName3 = DiscussionBoard.Model\\DiscussionBoard.Model.csproj
+		SccProjectName3 = DiscussionBoard.Model
+		SccLocalPath3 = DiscussionBoard.Model
+		SccProjectUniqueName4 = DiscussionBoard.UI\\DiscussionBoard.UI.csproj
+		SccProjectName4 = DiscussionBoard.UI
+		SccLocalPath4 = DiscussionBoard.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C71E5A9B-1EC1-49C7-99EA-836B3F97D207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71E5A9B-1EC1-49C7-99EA-836B3F97D207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71E5A9B-1EC1-49C7-99EA-836B3F97D207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71E5A9B-1EC1-49C7-99EA-836B3F97D207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C410DC-025F-4E15-BEF9-5B6D9E7AF86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C410DC-025F-4E15-BEF9-5B6D9E7AF86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C410DC-025F-4E15-BEF9-5B6D9E7AF86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C410DC-025F-4E15-BEF9-5B6D9E7AF86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F813556-9568-4A0C-84D3-741ACABAD72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F813556-9568-4A0C-84D3-741ACABAD72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F813556-9568-4A0C-84D3-741ACABAD72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F813556-9568-4A0C-84D3-741ACABAD72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2CFCE7-4E1E-48FC-AF6D-63CFC00F70A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2CFCE7-4E1E-48FC-AF6D-63CFC00F70A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2CFCE7-4E1E-48FC-AF6D-63CFC00F70A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2CFCE7-4E1E-48FC-AF6D-63CFC00F70A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

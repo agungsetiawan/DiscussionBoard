@@ -1,0 +1,142 @@
+﻿body {
+    background-color: #E5E5E5;
+}
+
+.navbar-default {
+background-color: #883EEB;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: white;
+}
+
+.navbar-default {
+ border-color: white; 
+}
+
+.navbar-default .navbar-brand {
+color: white;
+}
+.side-nav {
+    background-color: #883EEB;
+}
+
+.default-container {
+    background:whitesmoke;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.question {
+    background: lavender;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.a-question {
+    background: #883EEB;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.a-question-lastest {
+    background: cornflowerblue;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.a-question p, .a-question-lastest p {
+margin: 0 0 0px;
+}
+
+.question-info {
+    background: lavender;
+    min-height: 75px;
+    padding: 5px;
+}
+
+.answer-count {
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.answer-label {
+    text-align:center;
+}
+
+.question-title {
+    background: ghostwhite;
+}
+.title-label 
+{
+    min-height:75px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 24px;
+}
+
+a:hover, a:focus {
+color:  #428bca ;
+text-decoration: none; 
+}
+
+a {
+color: darkgrey;
+text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #999;
+background-color: transparent;
+}
+
+.btn-default {
+     color: white;
+    background-color: #883EEB;
+}
+
+.btn-white {
+    color: black;
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    color: black;
+    background-color: #ebebeb;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: white;
+    background-color: #883EEB;
+    border-color: white;
+}
+
+.top-question-heading {
+    background-color: #883EEB !important;
+    border-color: white !important;
+}
+
+.top-question-label {
+    font-size:25px;
+    color: white !important;
+}
+
+.panel-top-question {
+    border-color:  #CFB9EC;
+}
+
+.panel-lastest-question {
+    border-color: rgb(211, 221, 240);
+}
+
+.lastest-question-heading {
+    background-color: cornflowerblue !important;
+    border-color: white !important;
+}
+
+.btn-dasboard {
+    float:right;
+    margin:5px;
+}
