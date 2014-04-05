@@ -130,7 +130,7 @@ namespace DiscussionBoard.UI
             var id = btn.CommandArgument.ToString();
 
             Answer data = answerService.FindySingleAnswerById(int.Parse(id));
-            data.Vote += 1;
+            data.Vote -= 1;
             answerService.Update(data);
 
             Response.Redirect(Request.RawUrl);

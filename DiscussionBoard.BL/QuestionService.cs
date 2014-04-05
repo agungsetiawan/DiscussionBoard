@@ -48,5 +48,11 @@ namespace DiscussionBoard.BL
             questions = questions.OrderByDescending(q => q.CreatedDate).ToList();
             return questions;
         }
+
+        public IEnumerable<Question> FindByUserEmail(string userEmail)
+        {
+            IEnumerable<Question> questions = repository.FindAll().Where(q => q.User.Email == userEmail);
+            return questions;
+        }
     }
 }

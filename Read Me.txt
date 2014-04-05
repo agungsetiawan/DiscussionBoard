@@ -1,0 +1,41 @@
+README
+=======================================================================
+
+Discussion Board System
+
+Technology Used:
+- ASP.NET Web Form 4.5
+- Entity Framework Code First
+- Local DB
+- Bootstrap
+- Nuget
+
+
+NOTE:
+========================================================================
+1. We test the application and it works as expected. Some funcionalities
+   are not ready yet which are :
+   - Flag answer as spam
+   - Edit question
+   - Admin receives notification about spam answer
+   - Remove answer by Super Admin
+
+   Functionality that is not listed in Requirements but need to be done
+   and we have done it is:
+   - User can view his/her question list in Dashboard.aspx page
+
+2. Sending email to registran's email only works when the application is
+   running from Mitrais network, otherwise the program will throw an ex-
+   ception (we have not handled it), hardcore way to solve this problem 
+   when application is opened from outside Mitrais network is comment the
+   source code that is responsible in
+
+   DiscussionBoard.BL.UserService method Register().
+
+   Comment all codes below this one
+   repository.Save(user);
+
+3. After doing registration, user MUST ACTIVATE his/her account to be able
+   to login. There are two ways to do it :
+   - Click the link that is sent to his/her email (*number 2 rules)
+   - Click the link that is shown immediately after the user register
