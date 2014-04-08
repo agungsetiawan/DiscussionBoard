@@ -10,7 +10,7 @@ namespace DiscussionBoard.UI
 {
     public partial class TaggedQuestion : System.Web.UI.Page
     {
-        private QuestionService service = new QuestionService();
+        private IQuestionService service = new QuestionService();
 
         protected void Page_Load(object sender, EventArgs e)
         {

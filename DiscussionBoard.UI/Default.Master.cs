@@ -11,7 +11,7 @@ namespace DiscussionBoard.UI
 {
     public partial class Default : System.Web.UI.MasterPage
     {
-        private TagService service = new TagService();
+        private ITagService service = new TagService();
 
         protected void Page_Load(object sender, EventArgs e)
         {

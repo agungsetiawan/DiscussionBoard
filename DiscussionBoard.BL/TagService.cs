@@ -9,7 +9,7 @@ using System.Globalization;
 
 namespace DiscussionBoard.BL
 {
-    public class TagService
+    public class TagService : ITagService
     {
         private TagRepository repository = new TagRepository();
 

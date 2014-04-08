@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DiscussionBoard.BL
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private UserRepository repository = new UserRepository();
 

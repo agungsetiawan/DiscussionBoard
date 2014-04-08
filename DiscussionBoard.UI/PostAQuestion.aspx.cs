@@ -12,8 +12,8 @@ namespace DiscussionBoard.UI
 {
     public partial class PostAQuestion : System.Web.UI.Page
     {
-        private QuestionService qService = new QuestionService();
-        private UserService uService = new UserService();
+        private IQuestionService qService = new QuestionService();
+        private IUserService uService = new UserService();
 
         protected void Page_Load(object sender, EventArgs e)
         {

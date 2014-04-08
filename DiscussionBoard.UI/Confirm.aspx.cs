@@ -11,7 +11,7 @@ namespace DiscussionBoard.UI
 {
     public partial class Confirm : System.Web.UI.Page
     {
-        private UserService service = new UserService();
+        private IUserService service = new UserService();
 
         protected void Page_Load(object sender, EventArgs e)
         {

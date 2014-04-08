@@ -11,10 +11,10 @@ namespace DiscussionBoard.UI
 {
     public partial class Detail : System.Web.UI.Page
     {
-        AnswerService answerService = new AnswerService();
-        UserService userService = new UserService();
-        QuestionService questionService = new QuestionService();
-        TagService tagService = new TagService();
+        private IAnswerService answerService = new AnswerService();
+        private IUserService userService = new UserService();
+        private IQuestionService questionService = new QuestionService();
+        private ITagService tagService = new TagService();
 
         protected void Page_Load(object sender, EventArgs e)
         {

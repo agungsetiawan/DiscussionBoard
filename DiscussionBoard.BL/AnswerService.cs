@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DiscussionBoard.BL
 {
-    public class AnswerService
+    public class AnswerService : IAnswerService
     {
         private AnswerRepository repository = new AnswerRepository();
 

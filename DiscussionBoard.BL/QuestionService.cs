@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DiscussionBoard.BL
 {
-    public class QuestionService
+    public class QuestionService : IQuestionService
     {
         private QuestionRepository repository = new QuestionRepository();
 

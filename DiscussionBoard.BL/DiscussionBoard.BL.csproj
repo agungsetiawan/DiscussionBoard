@@ -51,6 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAnswerService.cs" />
+    <Compile Include="IQuestionService.cs" />
+    <Compile Include="ITagService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="TagService.cs" />
     <Compile Include="AnswerService.cs" />
     <Compile Include="QuestionService.cs" />
